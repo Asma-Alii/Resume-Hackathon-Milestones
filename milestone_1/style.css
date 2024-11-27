@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #d1d1e9;
+}
+
+/*profile section*/
+
+.resume-container {
+  background-color: #fffffe;
+  height: auto;
+  width: 40vw;
+  margin: auto;
+  margin-top: 4vw;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.profile-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile-image img {
+  width: 10vw;
+  border-radius: 50%;
+  margin-top: 2vw;
+}
+
+.name h1 {
+  font-size: 3vw;
+  color: #2b2c34;
+}
+
+/*content section*/
+
+.heading {
+  background-color: #6246ea;
+  color: #fffffe;
+  width: 90%;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  padding-left: 1vw;
+}
+
+.info {
+  padding-top: 1vw;
+  padding-left: 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+
+section {
+  margin-left: 1vw;
+  margin-top: 2vw;
+}
+
+ul {
+  list-style: none;
+}
+
+.work-experience {
+  padding-bottom: 3vw;
+}
+
+#skill-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*toggle button*/
+
+button {
+  font-size: 1.5vw;
+  border: none;
+  background: none;
+  color: #fffffe;
+  margin-right: 2vw;
+  cursor: pointer;
+}
+
+
+/*For Mobile */
+
+@media (max-width: 800px) {
+  .resume-container {
+    margin-top: 12vw;
+    height: auto;
+    width: 80vw;
+  }
+
+  .profile-section {
+    flex-direction: column-reverse;
+  }
+
+  .name {
+    width: 100%;
+  }
+
+  .name h1 {
+    text-align: center;
+    font-size: 8vw;
+  }
+
+  .profile-image {
+    margin-top: 3vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-image img {
+    width: 30vw;
+  }
+
+
+  .heading {
+    padding-left: 3vw;
+    font-size: 3vw;
+    height: 7vw;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+  }
+
+  section {
+    margin-left: 3vw;
+  }
+
+  .info {
+    font-size: 3vw;
+    gap: 2.5vw;
+  }
+
+  button {
+    font-size: 4vw;
+    margin-right: 5vw;
+  }
+}
+
+/*For Tablet*/
+
+@media (min-width: 801px) and (max-width: 1024px) {
+  .resume-container {
+    width: 65vw;
+  }
+
+  .name h1 {
+    font-size: 5vw;
+  }
+
+  .profile-image {
+    margin-top: 3vw;
+  }
+
+  .profile-image img {
+    width: 18vw;
+  }
+
+  .heading {
+    padding-left: 3.5vw;
+    font-size: 2vw;
+    height: 6vw;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+  }
+
+  section {
+    margin-left: 3vw;
+  }
+
+  .info {
+    font-size: 2vw;
+  }
+
+  button {
+    font-size: 3.5vw;
+    margin-right: 5vw;
+  }
+}
